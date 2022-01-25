@@ -19,9 +19,7 @@ class ServiceAPI {
 
   async getMovie(option) {
     try {
-      const response = await connection.get(
-        `/movie/${option}?page=${this.page}`,
-      );
+      const response = await connection.get(`${option}?page=${this.page}`);
       // const response2 = await connection.get(`/configuration`);
       // console.log(response2);
       const data = await response.data;

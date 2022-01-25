@@ -18,7 +18,7 @@ function callbackObserver(entries, observer) {
 
 function loadMovie() {
   loadService
-    .getMovie('now_playing')
+    .getMovie('trending/all/day')
     .then(dataProcessing)
     .catch(error => {
       console.log(error);
@@ -32,9 +32,7 @@ function dataProcessing(data) {
 }
 
 function markup(data) {
-  const result = galleryItem(data.results);
-
-  return result;
+  return galleryItem(data.results);
 }
 
 loadMovie();
