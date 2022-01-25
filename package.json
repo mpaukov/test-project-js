@@ -1,16 +1,15 @@
 {
- "name": "goit-js-test-project",
+  "name": "goit-js-test-project",
   "version": "1.0.0",
   "description": "Test-project",
   "main": "index.js",
   "homepage": "https://mpaukov.github.com/test-project-js",
-
- "scripts": {
+  "scripts": {
     "dev": "parcel src/*.html --port 6850",
     "build": "parcel build src/*.html --public-url /test-project-js/"
   },
   "repository": {
-     "type": "git",
+    "type": "git",
     "url": "git+https://github.com/mpaukov/test-project-js"
   },
   "keywords": [],
@@ -25,8 +24,8 @@
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2",
     "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "axios": "^0.25.0"
   }
 }
-
-
-
