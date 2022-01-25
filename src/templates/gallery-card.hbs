@@ -1,5 +1,6 @@
 
 {{#each this}}
+
 <li class="gallery__item">
   <a class="gallery__link" href="#">
     <img
@@ -7,16 +8,17 @@
       src="https://image.tmdb.org/t/p/w500{{poster_path}}"
       alt="{{title}}"
     />
+
     <div class="gallery__title">
       <p class="">{{original_title}}</p>
       <p class="">Release Date: {{release_date}}</p>
     </div>
-
     <div class="overlay">
-      <p class="overlay__text"> {{overview}}</p>
+      <p class="overlay__text">{{overview}}</p>
     </div>
   </a>
 </li>
+
 {{/each}}
 
 
