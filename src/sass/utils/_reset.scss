@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+// Сбрасываем стили спискам
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+// Сбрасываем стили ссылкам
+a {
+  text-decoration: none;
+}
+
+//Сбрасываем паддинги и маржины абзацам и заголовкам
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+
+//Стандартный стиль для рисунков
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+// Класс для скрытия контента
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
