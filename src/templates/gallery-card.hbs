@@ -1,10 +1,13 @@
 
 {{#each this}}
 <li class="gallery__item">
+     <img class="gallery__image" src="https://image.tmdb.org/t/p/w154{{poster_path}}" alt="{{title}}" >
    <p>Original Title: {{original_title}}</p>
    <p>Overview: {{overview}}</p>
    <p>Popularity: {{popularity}}</p>
-   <p>Poster Path: {{poster_path}}</p>
+  
+  
+
    <p>Release Date: {{release_date}}</p>
 </li>
 {{/each}}
